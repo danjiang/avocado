@@ -1,0 +1,81 @@
+$base-font-size: 18px;
+$brand-color: #005DAC;
+$text-color: #4C4C4C;
+
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+ul.link-list {
+	li {
+		a {
+			color: white;
+			text-decoration: none;
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}
+
+body {
+  color: $text-color;
+	font-size: $base-font-size;
+  line-height: 1.4;
+  background-color: white;
+  font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+  font-weight: normal;
+	text-align: center;
+}
+
+h1, h2, h3, h4 {
+	color: $brand-color;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 30px auto 0 auto;
+	padding: 0;
+	max-width: 550px;
+}
+
+h1 {
+  font-size: em(71.964px);
+}
+
+h2 { 
+  font-size: em(50.886px);
+}
+
+h3 {
+  font-size: em(35.982px);
+}
+
+h4 {
+  font-size: em(25.452px);
+}
+
+section#studio {
+	margin-top: 200px;
+	h3 {
+		display: inline-block;
+		padding-left: 60px;
+		background-image: url("http://7xqjbj.com1.z0.glb.clouddn.com/danthought-logo.png");
+		background-repeat: no-repeat;
+		background-size: 30px 45px;
+	}
+	h2 {
+		margin-top: 30px;
+	}
+}
+
+section#service {
+	margin-top: 200px;
+	padding: 200px 0;
+	color: white;
+	background-color: $brand-color;
+	h2 {
+		color: white;
+	}
+}
