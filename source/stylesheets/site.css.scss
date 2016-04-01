@@ -3,8 +3,6 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-$image-base-url: "http://7xqjbj.com1.z0.glb.clouddn.com";
-
 $base-font-size: 18px;
 $brand-color: #005DAC;
 $text-color: #4C4C4C;
@@ -203,7 +201,7 @@ h1 {
 	}
 }
 
-h2 { 
+h2 {
   font-size: em(50.886px);
 	@media only screen and (max-width: 600px) {
 		font-size: em(40.709px);
@@ -229,7 +227,7 @@ section#studio {
 	h3 {
 		display: inline-block;
 		padding-left: 60px;
-		background-image: url("#{$image-base-url}/danthought-logo.png");
+		background-image: url("/images/danthought-logo.png");
 		background-repeat: no-repeat;
 		background-size: 30px 45px;
 	}
@@ -255,7 +253,7 @@ section#service {
 	margin-top: 200px;
 	padding: 200px 0;
 	background-color: $brand-color;
-	background-image: url("#{$image-base-url}/servcie-drawing-background.png");
+	background-image: url("/images/servcie-drawing-background.png");
 	background-repeat: no-repeat;
 	background-position: 50% 30px;
 	h2 {
@@ -308,7 +306,7 @@ section#product {
 section#think {
 	padding: 200px 0;
 	background-color: $brand-color;
-	background-image: url("#{$image-base-url}/think-drawing-background.png");
+	background-image: url("/images/think-drawing-background.png");
 	background-repeat: no-repeat;
 	background-position: 50% 52px;
 	h2 {
@@ -352,7 +350,7 @@ section#toolkit {
 section#contact {
 	padding: 200px 0;
 	background-color: $brand-color;
-	background-image: url("#{$image-base-url}/contact-drawing-background.png");
+	background-image: url("/images/contact-drawing-background.png");
 	background-repeat: no-repeat;
 	background-position: 50% 111px;
 	h2 {
