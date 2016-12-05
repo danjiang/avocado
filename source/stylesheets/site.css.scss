@@ -315,14 +315,22 @@ section#think {
 	p {
 		color: white;
 	}
-	ul.think-list {
-		float: none;
-		text-align: center;
-	}
+  ul.think-list1 {
+    width: 22%;
+    margin-left: 22%;
+  }
+  ul.think-list2 {
+    width: 22%;
+    margin-left: 15%;
+  }
 	@media only screen and (max-width: 600px) {
 		background-size: contain;
 		background-position: 50% 150px;
 		padding: 100px 0;
+    ul.think-list1, ul.think-list2 {
+      width: auto;
+      margin-left: 32%;
+    }
 	}
 }
 
