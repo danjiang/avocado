@@ -10,28 +10,11 @@
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag "modernizr-2.8.3.min" %>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?450ce76e4fafce204723482a7aadee7f";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
   </head>
 	<!--[if lt IE 8]>
-		<p class="browserupgrade">你正在使用过时的浏览器，请 <a href="http://browsehappy.com/">升级你的浏览器</a> 来感受更好的上网体验。</p>
+		<p class="browserupgrade">You are using an outdated browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
   <body>
     <%= yield %>
   </body>
-	<script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-		e.src='https://www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-33658695-1','auto');ga('send','pageview');
-	</script>
 </html>
