@@ -2,9 +2,9 @@
 @import "normalize";
 
 $base-font-size: 18px;
-$brand-color: #005DAC;
-$text-color: #4C4C4C;
-$highlight-color: #FABF00;
+$brand-color: #0070c9;
+$text-color: #333333;
+$highlight-color: #ef5602;
 
 @function em($px, $base: $base-font-size) {
     @return ($px / $base) * 1em;
@@ -149,33 +149,22 @@ ul.link-list-brand {
 	}
 }
 
-ul.link-list-white {
-  @extend ul.link-list;
-	li {
-		color: white;
-		a {
-			color: white;
-		}
-	}
-}
-
 div.wrapper {
 	max-width: 650px;
 	margin: 0 auto;
 }
 
 body {
-  color: white;
+	color: $text-color;
 	font-size: $base-font-size;
-  line-height: 1.4;
-  background-color: $brand-color;
-  font-family: "open-sans", sans-serif;
-  font-weight: normal;
+	line-height: 1.4;
+	background-color: #f2f2f2;
+	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-weight: normal;
 	text-align: center;
 }
 
 h1, h2, h3, h4 {
-	color: white;
 	margin: 0;
 	padding: 0;
 }
@@ -228,6 +217,7 @@ section#aboutme {
   }
 	p {
 		max-width: 550px;
+		line-height: 1.6;
 	}
 	@media only screen and (max-width: 600px) {
 		margin-top: 100px;
